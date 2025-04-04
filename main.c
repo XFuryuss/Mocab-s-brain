@@ -1,3 +1,4 @@
+// Brain for Mocab, coded and provided by XFuryus
 #include <stdio.h>
 #include <string.h>
 
