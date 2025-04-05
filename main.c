@@ -8,6 +8,7 @@ void clearInputBuffer() {
 }
 
 int main() {
+    
     // UI displays the current number of active brain cells in Mocab's brain.
     printf("Mocab's currently usning '0' brincels.\n");
     char brainStatus[10];
