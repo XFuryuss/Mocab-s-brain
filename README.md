@@ -1,2 +1,2 @@
 # Mocab-s-brain
-Brain for Mocab coded in C (it only supports one function)
+Brain for Mocab coded in multiple languages
