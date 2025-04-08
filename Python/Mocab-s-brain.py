@@ -11,7 +11,7 @@ if True:
     # Clear any leftover input[Not needed for this instance in Py]
 
     # Function that manages Mocab's brain
-    if brainStatus == "y" or brainStatus == "n":
+    if brainStatus == "y" or brainStatus == "Y":
         print("\nHow many brincels to activate?\n");
         braincells = input("-> ");
         try: 

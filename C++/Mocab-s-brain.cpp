@@ -13,7 +13,7 @@ int main() {
     // Clear any leftover input[Not needed for this instance in C++]
 
     // Function that manages Mocab's brain
-    if (brainStatus == "y" || brainStatus == "n") {
+    if (brainStatus == "y" || brainStatus == "Y") {
         string braincells;
         cout << "\nHow many brincels to activate?\n";
         cout << "-> ";
