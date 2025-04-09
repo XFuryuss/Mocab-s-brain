@@ -1,4 +1,4 @@
-// Imoroved Brain for Mocab, coded and provided by Dalatexcoder
+// Improved Brain for Mocab, coded and provided by Dalatexcoder
 // Heavy Inspiration and Original Edition by Xfuryus 
 #include <iostream>
 #include <chrono>
