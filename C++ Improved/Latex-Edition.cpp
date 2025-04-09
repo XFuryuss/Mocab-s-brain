@@ -6,24 +6,29 @@
 #include <random>
 #include <stdexcept>
 using namespace std;
-int main() {
+int main() 
+{
     cout << "Mocab's Brain - Improved C++ Edition by Dalatexcoder\n";
     cout << "\nBoot Started\n";
     cout << "Handling Libraries\n";
     this_thread::sleep_for(chrono::milliseconds(1000));
-    for (int j = 0; j <= 99; j++) {
+    for (int j = 0; j <= 99; j++) 
+    {
     	cout << "Loading... " << j << "%\n";
     	random_device rd;
     	mt19937 gen(rd());
     	uniform_int_distribution<> distrib(-20, 20);
-    	if (j <= 95) {
+    	if (j <= 95) 
+		{
     		this_thread::sleep_for(chrono::milliseconds(distrib(gen) + 40));
-    	} else {
+    	}
+		else 
+		{
     		this_thread::sleep_for(chrono::milliseconds(distrib(gen) + j * 150 - 14210));
     	}
     }
-    int idealTime = 3939 / 6.9 * 3.9;
-    this_thread::sleep_for(chrono::milliseconds(idealTime));
+	int idealTime = 3939 / 6.9 * 3.9;
+	this_thread::sleep_for(chrono::milliseconds(idealTime));
     cout << "Loading... 100%\n";
     this_thread::sleep_for(chrono::milliseconds(25));
     cout << "Loading libraries finished!\n\n";
@@ -31,20 +36,27 @@ int main() {
     cout << "A new version of Mocab is avaliable(3.9)! Do you want to download it(Y/N)?\n> ";
     string update;
     cin >> update;
-    if (update == "y" || update == "Y") {
+    if (update == "y" || update == "Y") 
+    {
     	cout << "Starting Update...";
-    } else if (update == "n" || update == "N") {
+    }
+    else if (update == "n" || update == "N") 
+    {
     	throw runtime_error("Update is Mandatory!");
-    } else {
+    }
+    else
+    {
     	cout << "\nError: I don't understand that. :(";
     	this_thread::sleep_for(chrono::milliseconds(50));
     	cout << "\nStarting Update: Update is Mandatory!";
     }
     this_thread::sleep_for(chrono::milliseconds(750));
     string hash = "";
-	for (int l = 0; l <= 99; l++) {
+	for (int l = 0; l <= 99; l++) 
+	{
     	hash = "";
-    	for (int m = 0; m < l; m++) {
+    		for (int m = 0; m < l; m++) 
+	    {
     		hash = hash + "#";
     	}
     	wcout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
@@ -73,27 +85,40 @@ int main() {
     // Clear any leftover input[Not needed for this instance in C++]
 
     // Function that manages Mocab's brain
-    if (brainStatus == "y" || brainStatus == "Y") {
+    if (brainStatus == "y" || brainStatus == "Y") 
+	{
         string braincells;
         cout << "\nHow many brincels to activate?\n";
         cout << "> ";
         cin >> braincells;
-        try {
+        try 
+		{
         	int braincells_int = stoi(braincells);
-        	if (braincells_int <= 0) {
+        	if (braincells_int <= 0) 
+			{
             	cout << "\nWhat are you doing!? He already has '0' brincels pls. :(\n";
-        	} else if (braincells_int == 1) {
+        	}
+			else if (braincells_int == 1)
+			{
             	cout << "\nMocab's currently usning '1' brincel.\nMocab: Quack!\n";
-        	} else {
+        	}
+			else
+			{
             	cout << "\nSori Mocab doesn't support using more than '1' brincel. ;(\n";
         	}
-        } catch (...) {
+        }
+		catch (...)
+		{
         	cout << "\nError: I don't recognize that command. :(\n";
         }
         
-    } else if (brainStatus == "n" || brainStatus == "N") {
+    }
+	else if (brainStatus == "n" || brainStatus == "N") 
+	{
         cout << "\nI see you like your Mocab vanilla. :)\n";
-    } else {
+    }
+	else
+	{
         cout << "\nError: I don't recognize that command. :(\n";
     }
     return 39; // Thanks for looking at my code, this is in appreciation of her.
