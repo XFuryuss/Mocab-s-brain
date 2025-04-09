@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Mocab's currently usning '0' brincels.");
+        System.out.println("\nDo you want to turn on Mocab's brain? Allowed commands: y/n :D");
+        System.out.print("-> ");
+
+        String in = scanner.nextLine();
+
+        if (in.equalsIgnoreCase("y")) {
+            System.out.println("\nHow many brincels to activate?");
+            System.out.print("-> ");
+
+            if (scanner.hasNextInt()) {
+                int braincells = scanner.nextInt();
+
+                if (braincells < 0) {
+                    System.out.println("\nWhat are you doing!? He already has '0' brincels pls. :(");
+                } else if (braincells == 1) {
+                    System.out.println("\nMocab's currently usning '1' brincel.\nMocab: Quack!");
+                } else {
+                    System.out.println("\nSori Mocab doesn't support using more than '1' brincel. ;(");
+                }
+            } else {
+                System.out.println("\nError: I don't recognize that command. :(");
+                scanner.nextLine();
+            }
+        } else if (in.equalsIgnoreCase("n")) {
+            System.out.println("\nI see you like your Mocab vanilla. :)");
+        } else {
+            System.out.println("\nError: I don't recognize that command. :(");
+        }
+        scanner.close();
+    }
+}
